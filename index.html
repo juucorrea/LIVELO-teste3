@@ -10,7 +10,28 @@
 	<script src="js/mindar-image-aframe.prod"></script>
 	<style>.tmpHidden {display: none;}</style>
 	<!-- finish mindar files -->
-	<script src="Build/BUILD3.loader.js"></script>
+	<script src="Build/BUILD4.loader.js"></script>
+	<style>
+		.jumplink {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 50px;
+			height: 50px;
+			background-color: #df0777;
+			color: white;
+			font-size: 35px;
+			display: flex;
+			line-height: 50px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 50px;
+			justify-content: center;
+			align-items: center;
+			scale: 0.75;
+			z-index: 2;
+		}
+	</style>
   </head>
   <body style="text-align: center; margin: 0px; padding: 0px; overflow: hidden; ">
 	<div id="unity-container" class="unity-desktop" style="z-index: 2; position: absolute; top: 0; left: 0;">
@@ -22,6 +43,7 @@
 			</div>
 		</div>
 	</div>
+	<a class="jumplink" href="https://www.livelo.com.br/?ref=webarexp" >></a>
 	
     <script>
 	  var container = document.querySelector("#unity-container");
@@ -65,9 +87,9 @@
       
 	  var buildUrl = "Build";
 	  var config = {
-        dataUrl: buildUrl + "/BUILD3.data",
-        frameworkUrl: buildUrl + "/BUILD3.framework.js",
-			codeUrl: buildUrl + "/BUILD3.wasm",
+        dataUrl: buildUrl + "/BUILD4.data",
+        frameworkUrl: buildUrl + "/BUILD4.framework.js",
+			codeUrl: buildUrl + "/BUILD4.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "LIVELO AMAZON 3",
